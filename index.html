@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/all.css">
+        <script src="https://kit.fontawesome.com/7b55d0ab6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+<div id="header">
+    <div class="container">
+
+        <div class="header-text">
+            <p>[Future] Engineer and Physicist</p>
+            <h1>Hi, I'm <span>Raditya Haidar M</span><br>from <span>Indonesia</span></h1>
+        </div>
+    </div>
+</div>
+ <!-- -----------About---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+            <p>Hello! Welcome to my personal website. My name is Raditya Haidar M, and I am currently an 11th-grade student living in Indonesia. My main focus is on mastering fundamental physics, as I believe it is the key to understanding the world and driving innovation. Alongside this, I also have a strong interest in robotics, which allows me to apply the concepts I learn in physics through hands-on projects. Through this website, I aim to share my passion for physics, my learning journey, and the projects that combine both science and technology.</p>
+            <br><i>Currently, I’ve adapted a pre-existing website template since web design isn’t my primary field. This platform acts as my interim portfolio. Moving forward, I plan to create a completely original website tailored to my vision.</i>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Robotics</span><br>Hardware programming projects, such as robotics using Arduino, which is based on the C programming language</li>
+                        <li><span>Science</span><br>Mastering fundamental physics to compete in national-level olympiads, while still maintaining an interest in other sciences like chemistry and biology, even though they are not my main focus</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current</span><br>- 2nd winner on Mechatron Robotic Arduino Creative Coding Competition</li>
+                        <li>- I have won gold, silver, and bronze medals from the Physics and Biology Olympiads, with mostly at Physics (you can see them on my Instagram account at the bottom)</li>
+                        <li><span>2020 - 2023</span><br>- Best Hafizh for Tasmi' 11 Juz</li>
+                        <li>- 3 Gold Medal of English National Olympiad</li>
+                        <li>- 1 Silver Medal of Science National Olympiad</li>
+                        <li><span>2018 - 2020</span><br>Managed to memorize 30 Juz of Qur'an within one and a half years</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current</span><br>Senior Highschool Student of SMA Islam Sinar Cendekia in South Tangerang</li>
+                        <li><span>2020 - 2023</span><br>Junior Highschool Student of Nurul Fikri Boarding School in Serang</li>
+                        <li><span>2014 - 2020</span><br>Primary School Student of Syafana Islamic School in Tangerang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- -----------Portfolio---------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>My Pictoblox Basic Block Coding</h3>
+                    <p>These are some of the approaches I use to develop my logical thinking before working with general-purpose programming languages</p>
+                    <a href="https://github.com/HaidarRaditya/Pictoblox-Project"><i class="fas fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.jpg">
+                <div class="layer">
+                    <h3>Robotics Project</h3>
+                    <p>Here are some of my Arduino C programming codes used in robotics projects and for learning purposes</p>
+                    <a href="https://github.com/HaidarRaditya/Arduino-Project"><i class="fas fa-link"></i></a>
+                </div>  
+            </div>
+ </div>
+
+ <!-- -----------Contact---------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact.radityahaidar@proton.me</p>
+                <p><i class="fas fa-phone-square"></i>081289833983</p>
+                <div class="div social-icons">
+                    <a href="https://www.instagram.com/radityahm_188/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/HaidarRaditya"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://discordapp.com/users/966395173070323795"><i class="fa-brands fa-discord"></i></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Raditya Haidar Maheswara</p>
+    </div>
+ </div>
+ 
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyvRJOIPUwBZ14QJd-IxyH469zl5BmUfa0sRFVxVywnLrwCdPILB7jUovZbufmpLVSB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+
+
+
+</body>
+</html>
